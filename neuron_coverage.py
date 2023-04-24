@@ -7,6 +7,7 @@ import numpy as np
 # from tqdm import tqdm_notebook as tqdm
 from tqdm import tqdm
 
+#获取模型在给定数据集上的所有神经元的初始状态。遍历模型的每一层，并对每个神经元生成一个键值对，其中键包含了神经元所在层的信息和神经元的索引，值为False，表示该神经元的状态是未激活的。
 def get_model_modules(model, layer_name=None):
     layer_dict = {}
     idx=0
